@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("/fonts/font-face.css");
+}
+*,
+a {
+  font-family: "Vazir";
+}
+
+$mainBackground: #fff;
+
+$bgGray: rgba(0, 0, 0, 0.02);
+$lightGrayColor: rgb(134, 134, 134);
+$darkGrayColor: rgba(56, 56, 56, 0.7);
+$orangeColor: #ec7741;
+$headerBoxShadowColor: rgba(0, 0, 0, 0.2);
+
+$buttonColor: #868686;
+
+@mixin input {
+  &:focus,
+  &:active,
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+    -webkit-text-fill-color: rgb(61, 61, 61) !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (min-width: 767px) {
+  .search {
+    width: 40% !important;
+  }
+}
+.main {
+  background-color: $mainBackground;
+  overflow: hidden;
+  .title {
+    font-size: 1.3rem;
+    color: #836866;
+  }
+  .title2 {
+    font-size: 1.1rem;
+    color: #836866;
+  }
+}
+
+.search {
+  width: 90%;
+  input {
+    background-color: $lightGrayColor;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 0.8rem !important;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+
+    @include input();
+
+    &::placeholder {
+      font-size: 0.8rem !important;
+      color: #bdbdbd;
+    }
+  }
+
+  &:hover .serch-icon {
+    cursor: pointer;
+    color: #bbbbbb;
+  }
+}
+
+.search-icon {
+  left: 13px;
+  top: 6px;
+  color: #bdbdbd;
+  z-index: 3;
+  font-size: 0.9rem;
+  transform: scaleX(-1);
+  transition: all 0.3s;
+}
+
+.header {
+  background-color: $darkGrayColor;
+  box-shadow: 0 2px 3px $headerBoxShadowColor;
+  h1 {
+    color: #f5dd5d;
+    font-size: 1.5rem;
+  }
+  h3 {
+    color: #ffffcc;
+    font-size: 0.8rem;
+  }
+  ul li img {
+    width: 13px;
+  }
+  ul li a {
+    color: #fff;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #6993a7;
+    &:hover {
+      color: #79aec8;
+      border-bottom: 1px solid #79aec8;
+      text-decoration: none;
+    }
+  }
+}
+
+.sidebar {
+  .btntitle {
+    color: #fff !important;
+    font-size: 0.8rem;
+    background-color: $orangeColor;
+    border-radius: 0;
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+      text-decoration: underline !important;
+    }
+  }
+  table {
+    tr {
+      border-bottom: 1px solid #eeeeee;
+      &:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+      a {
+        font-size: 0.8rem;
+        color: #447e9b !important;
+        &:hover {
+          color: #0f3244 !important;
+          text-decoration: none;
+        }
+      }
+      img {
+        width: 15px;
+      }
+    }
+  }
+}
+
+.statistics {
+  background-color: $bgGray;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  h2 {
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eeeeee;
+    color: #6b7174;
+    i {
+      color: $orangeColor;
+    }
+  }
+  h6 {
+    font-size: 1rem;
+    color: #6b7174;
+    font-weight: bold;
+    i {
+      color: green;
+      font-size: 0.8rem;
+    }
+  }
+  span {
+    color: #8a8989;
+    font-size: 1rem;
+  }
+  .down {
+    h6,
+    span {
+      font-size: 0.8rem !important;
+    }
+    i {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  img {
+    width: 12px;
+    height: 12px;
+  }
+  a {
+    color: #447e9b;
+    font-size: 0.8rem;
+  }
+  a:hover {
+    color: #0f3244;
+    text-decoration: none;
+  }
+}
+
+.table-search {
+  background-color: $bgGray;
+  form {
+    width: 30%;
+  }
+  input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding-left: 40px;
+    background-color: transparent;
+
+    @include input();
+  }
+
+  &:hover .serch-icon {
+    cursor: pointer;
+    color: #bbbbbb;
+  }
+  .add {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    i {
+      color: green !important;
+    }
+  }
+}
+
+.customtable {
+  thead {
+    background-color: $bgGray;
+    color: rgba(0, 0, 0, 0.7) !important;
+    font-size: 0.9rem;
+  }
+  tr td {
+    vertical-align: middle !important;
+    font-size: 0.8rem;
+    color: rgb(129, 129, 129);
+
+    a:hover {
+      color: rgb(18, 20, 110);
+      text-decoration: none;
+    }
+  }
+  tbody tr:nth-child(even) {
+    background-color: $bgGray;
+  }
+}
+
+.date a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.filter {
+  background-color: $bgGray;
+  .title {
+    background-color: $orangeColor;
+    color: #fff;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+  }
+  ul {
+    list-style-type: none;
+    text-align: right;
+    padding: 10px 15px;
+
+    li a {
+      font-size: 0.8rem;
+      padding: 5px 0px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+// form--------------------------------------------------------------------------------------------
+
+.form-title {
+  color: #fff !important;
+  font-size: 0.9rem;
+  background-color: $orangeColor;
+  border-radius: 0;
+  font-weight: bold;
+  &:hover {
+    color: #fff;
+  }
+}
+.customform {
+  border-bottom: 1px solid #eeeeee;
+}
+.custom-field-title {
+  font-size: 0.9rem;
+  color: rgb(71, 71, 71);
+}
+.custom-field {
+  @include input();
+}
+.custom-field:focus::placeholder {
+  color: transparent;
+}
+.custombutton {
+  background-color: $buttonColor;
+  font-size: 0.9rem;
+  color: rgb(231, 231, 231);
+  font-weight: bold;
+  transition: all 0.3s;
+  border-radius: 2px;
+  padding: 5px 20px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: all 0.3s;
+
+  i {
+    transition: all 0.3s;
+    color: #575757;
+  }
+
+  &:hover {
+    color: #fff;
+    i {
+      color: $orangeColor;
+    }
+  }
+}

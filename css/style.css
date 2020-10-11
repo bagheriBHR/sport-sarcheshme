@@ -1,0 +1,387 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("/fonts/font-face.css");
+}
+
+*,
+a {
+  font-family: "Vazir";
+}
+
+@media (min-width: 767px) {
+  .search {
+    width: 40% !important;
+  }
+}
+
+.main {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.main .title {
+  font-size: 1.3rem;
+  color: #836866;
+}
+
+.main .title2 {
+  font-size: 1.1rem;
+  color: #836866;
+}
+
+.search {
+  width: 90%;
+}
+
+.search input {
+  background-color: #868686;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.8rem !important;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.search input:focus, .search input:active, .search input:-webkit-autofill, .search input:-webkit-autofill:hover, .search input:-webkit-autofill:focus {
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+  -webkit-text-fill-color: #3d3d3d !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.search input::-webkit-input-placeholder {
+  font-size: 0.8rem !important;
+  color: #bdbdbd;
+}
+
+.search input:-ms-input-placeholder {
+  font-size: 0.8rem !important;
+  color: #bdbdbd;
+}
+
+.search input::-ms-input-placeholder {
+  font-size: 0.8rem !important;
+  color: #bdbdbd;
+}
+
+.search input::placeholder {
+  font-size: 0.8rem !important;
+  color: #bdbdbd;
+}
+
+.search:hover .serch-icon {
+  cursor: pointer;
+  color: #bbbbbb;
+}
+
+.search-icon {
+  left: 13px;
+  top: 6px;
+  color: #bdbdbd;
+  z-index: 3;
+  font-size: 0.9rem;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header {
+  background-color: rgba(56, 56, 56, 0.7);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  color: #f5dd5d;
+  font-size: 1.5rem;
+}
+
+.header h3 {
+  color: #ffffcc;
+  font-size: 0.8rem;
+}
+
+.header ul li img {
+  width: 13px;
+}
+
+.header ul li a {
+  color: #fff;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #6993a7;
+}
+
+.header ul li a:hover {
+  color: #79aec8;
+  border-bottom: 1px solid #79aec8;
+  text-decoration: none;
+}
+
+.sidebar .btntitle {
+  color: #fff !important;
+  font-size: 0.8rem;
+  background-color: #ec7741;
+  border-radius: 0;
+}
+
+.sidebar .btntitle:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline !important;
+}
+
+.sidebar table tr {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.sidebar table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.sidebar table tr a {
+  font-size: 0.8rem;
+  color: #447e9b !important;
+}
+
+.sidebar table tr a:hover {
+  color: #0f3244 !important;
+  text-decoration: none;
+}
+
+.sidebar table tr img {
+  width: 15px;
+}
+
+.statistics {
+  background-color: rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.statistics h2 {
+  font-size: 1.1rem;
+  border-bottom: 1px solid #eeeeee;
+  color: #6b7174;
+}
+
+.statistics h2 i {
+  color: #ec7741;
+}
+
+.statistics h6 {
+  font-size: 1rem;
+  color: #6b7174;
+  font-weight: bold;
+}
+
+.statistics h6 i {
+  color: green;
+  font-size: 0.8rem;
+}
+
+.statistics span {
+  color: #8a8989;
+  font-size: 1rem;
+}
+
+.statistics .down h6,
+.statistics .down span {
+  font-size: 0.8rem !important;
+}
+
+.statistics .down i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.statistics img {
+  width: 12px;
+  height: 12px;
+}
+
+.statistics a {
+  color: #447e9b;
+  font-size: 0.8rem;
+}
+
+.statistics a:hover {
+  color: #0f3244;
+  text-decoration: none;
+}
+
+.table-search {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-search form {
+  width: 30%;
+}
+
+.table-search input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding-left: 40px;
+  background-color: transparent;
+}
+
+.table-search input:focus, .table-search input:active, .table-search input:-webkit-autofill, .table-search input:-webkit-autofill:hover, .table-search input:-webkit-autofill:focus {
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+  -webkit-text-fill-color: #3d3d3d !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.table-search:hover .serch-icon {
+  cursor: pointer;
+  color: #bbbbbb;
+}
+
+.table-search .add {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.table-search .add i {
+  color: green !important;
+}
+
+.customtable thead {
+  background-color: rgba(0, 0, 0, 0.02);
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-size: 0.9rem;
+}
+
+.customtable tr td {
+  vertical-align: middle !important;
+  font-size: 0.8rem;
+  color: #818181;
+}
+
+.customtable tr td a:hover {
+  color: #12146e;
+  text-decoration: none;
+}
+
+.customtable tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.date a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+.date a:hover {
+  color: #000;
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.filter .title {
+  background-color: #ec7741;
+  color: #fff;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.filter ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 10px 15px;
+}
+
+.filter ul li a {
+  font-size: 0.8rem;
+  padding: 5px 0px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form-title {
+  color: #fff !important;
+  font-size: 0.9rem;
+  background-color: #ec7741;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.form-title:hover {
+  color: #fff;
+}
+
+.customform {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.custom-field-title {
+  font-size: 0.9rem;
+  color: #474747;
+}
+
+.custom-field:focus, .custom-field:active, .custom-field:-webkit-autofill, .custom-field:-webkit-autofill:hover, .custom-field:-webkit-autofill:focus {
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+  -webkit-text-fill-color: #3d3d3d !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.custom-field:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.custom-field:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.custom-field:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.custom-field:focus::placeholder {
+  color: transparent;
+}
+
+.custombutton {
+  background-color: #868686;
+  font-size: 0.9rem;
+  color: #e7e7e7;
+  font-weight: bold;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 2px;
+  padding: 5px 20px !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  transition: all 0.3s;
+}
+
+.custombutton i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #575757;
+}
+
+.custombutton:hover {
+  color: #fff;
+}
+
+.custombutton:hover i {
+  color: #ec7741;
+}
+/*# sourceMappingURL=style.css.map */
