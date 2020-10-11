@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Vazir";
-  src: url("/fonts/font-face.css");
+  src: url("/fonts/Vazir.ttf");
 }
 *,
 a {
@@ -146,7 +146,7 @@ $buttonColor: #868686;
   background-color: $bgGray;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-bottom: 1px solid #eeeeee;
     color: #6b7174;
     i {
@@ -154,22 +154,22 @@ $buttonColor: #868686;
     }
   }
   h6 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #6b7174;
     font-weight: bold;
     i {
       color: green;
-      font-size: 0.8rem;
     }
   }
   span {
     color: #8a8989;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
   }
   .down {
     h6,
     span {
-      font-size: 0.8rem !important;
+      font-size: 0.7rem !important;
     }
     i {
       color: rgba(0, 0, 0, 0.5);

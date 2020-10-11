@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Vazir";
-  src: url("/fonts/font-face.css");
+  src: url("/fonts/Vazir.ttf");
 }
 
 *,
@@ -163,7 +163,7 @@ a {
 }
 
 .statistics h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-bottom: 1px solid #eeeeee;
   color: #6b7174;
 }
@@ -173,24 +173,24 @@ a {
 }
 
 .statistics h6 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #6b7174;
   font-weight: bold;
 }
 
 .statistics h6 i {
   color: green;
-  font-size: 0.8rem;
 }
 
 .statistics span {
   color: #8a8989;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .statistics .down h6,
 .statistics .down span {
-  font-size: 0.8rem !important;
+  font-size: 0.7rem !important;
 }
 
 .statistics .down i {
