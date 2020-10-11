@@ -25,7 +25,7 @@ a {
 }
 
 .main .title2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #836866;
 }
 
@@ -163,7 +163,7 @@ a {
 }
 
 .statistics h2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-bottom: 1px solid #eeeeee;
   color: #6b7174;
   font-weight: bold;
@@ -185,7 +185,7 @@ a {
 
 .statistics span {
   color: #8a8989;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -227,6 +227,7 @@ a {
   width: 100%;
   padding-left: 40px;
   background-color: transparent;
+  font-size: 0.9rem;
 }
 
 .table-search input:focus, .table-search input:active, .table-search input:-webkit-autofill, .table-search input:-webkit-autofill:hover, .table-search input:-webkit-autofill:focus {
@@ -245,7 +246,7 @@ a {
 }
 
 .table-search .add {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
@@ -258,7 +259,7 @@ a {
 .customtable thead {
   background-color: rgba(0, 0, 0, 0.02);
   color: rgba(0, 0, 0, 0.7) !important;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .customtable tr td {
@@ -279,6 +280,7 @@ a {
 .date a {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 .date a:hover {
@@ -293,8 +295,7 @@ a {
   background-color: #ec7741;
   color: #fff;
   text-align: right;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.9rem;
   padding: 10px;
 }
 
@@ -312,10 +313,9 @@ a {
 
 .form-title {
   color: #fff !important;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   background-color: #ec7741;
   border-radius: 0;
-  font-weight: bold;
 }
 
 .form-title:hover {
@@ -327,7 +327,7 @@ a {
 }
 
 .custom-field-title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #474747;
 }
 
@@ -359,9 +359,8 @@ a {
 
 .custombutton {
   background-color: #868686;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #e7e7e7;
-  font-weight: bold;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 2px;

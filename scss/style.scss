@@ -44,7 +44,7 @@ $buttonColor: #868686;
     color: #836866;
   }
   .title2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #836866;
   }
 }
@@ -146,7 +146,7 @@ $buttonColor: #868686;
   background-color: $bgGray;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-bottom: 1px solid #eeeeee;
     color: #6b7174;
     font-weight: bold;
@@ -164,7 +164,7 @@ $buttonColor: #868686;
   }
   span {
     color: #8a8989;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
   }
   .down {
@@ -201,6 +201,7 @@ $buttonColor: #868686;
     width: 100%;
     padding-left: 40px;
     background-color: transparent;
+    font-size: 0.9rem;
 
     @include input();
   }
@@ -210,7 +211,7 @@ $buttonColor: #868686;
     color: #bbbbbb;
   }
   .add {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
@@ -224,7 +225,7 @@ $buttonColor: #868686;
   thead {
     background-color: $bgGray;
     color: rgba(0, 0, 0, 0.7) !important;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   tr td {
     vertical-align: middle !important;
@@ -244,6 +245,7 @@ $buttonColor: #868686;
 .date a {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
+  font-size: 0.8rem;
 
   &:hover {
     color: #000;
@@ -256,8 +258,7 @@ $buttonColor: #868686;
     background-color: $orangeColor;
     color: #fff;
     text-align: right;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 0.9rem;
     padding: 10px;
   }
   ul {
@@ -277,10 +278,9 @@ $buttonColor: #868686;
 
 .form-title {
   color: #fff !important;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   background-color: $orangeColor;
   border-radius: 0;
-  font-weight: bold;
   &:hover {
     color: #fff;
   }
@@ -289,7 +289,7 @@ $buttonColor: #868686;
   border-bottom: 1px solid #eeeeee;
 }
 .custom-field-title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: rgb(71, 71, 71);
 }
 .custom-field {
@@ -300,9 +300,8 @@ $buttonColor: #868686;
 }
 .custombutton {
   background-color: $buttonColor;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: rgb(231, 231, 231);
-  font-weight: bold;
   transition: all 0.3s;
   border-radius: 2px;
   padding: 5px 20px !important;
