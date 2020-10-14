@@ -35,6 +35,9 @@ $buttonColor: #868686;
   .search {
     width: 40% !important;
   }
+  .table-search form {
+    width: 40% !important;
+  }
 }
 .main {
   background-color: $mainBackground;
@@ -86,9 +89,10 @@ $buttonColor: #868686;
 .header {
   background-color: $darkGrayColor;
   box-shadow: 0 2px 3px $headerBoxShadowColor;
-  h1 {
+  h1 a {
     color: #f5dd5d;
     font-size: 1.5rem;
+    text-decoration: none;
   }
   h3 {
     color: #ffffcc;
@@ -100,10 +104,10 @@ $buttonColor: #868686;
   ul li a {
     color: #fff;
     font-size: 0.8rem;
-    border-bottom: 1px solid #6993a7;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     &:hover {
-      color: #79aec8;
-      border-bottom: 1px solid #79aec8;
+      color: $orangeColor;
+      border-bottom: 1px solid $orangeColor;
       text-decoration: none;
     }
   }
@@ -224,7 +228,7 @@ $buttonColor: #868686;
 .table-search {
   background-color: $bgGray;
   form {
-    width: 30%;
+    width: 100%;
   }
   input {
     border: none;
@@ -232,7 +236,7 @@ $buttonColor: #868686;
     width: 100%;
     padding-left: 40px;
     background-color: transparent;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 
     @include input();
   }
@@ -240,15 +244,6 @@ $buttonColor: #868686;
   &:hover .serch-icon {
     cursor: pointer;
     color: #bbbbbb;
-  }
-  .add {
-    font-size: 0.8rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-    i {
-      color: green !important;
-    }
   }
 }
 
@@ -274,17 +269,24 @@ $buttonColor: #868686;
 }
 
 .date a {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(95, 43, 43, 0.6);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  border: 1px solid rgba(29, 18, 18, 0.2);
+  padding: 3px 10px;
 
   &:hover {
-    color: #000;
+    color: rgba(95, 43, 43, 0.8);
+    border: 1px solid rgba(29, 18, 18, 0.4);
   }
 }
 
 .filter {
   background-color: $bgGray;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  i {
+    font-size: 0.7rem !important;
+  }
   .title {
     background-color: $orangeColor;
     color: #fff;
@@ -297,10 +299,21 @@ $buttonColor: #868686;
     text-align: right;
     padding: 10px 15px;
 
-    li a {
-      font-size: 0.8rem;
-      padding: 5px 0px;
-      color: rgba(0, 0, 0, 0.7);
+    li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 8px;
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      a {
+        font-size: 0.8rem;
+        padding: 5px 0px;
+        color: rgba(0, 0, 0, 0.7);
+        text-decoration: none;
+      }
     }
   }
 }
@@ -343,12 +356,16 @@ $buttonColor: #868686;
   i {
     transition: all 0.3s;
     color: #575757;
+    line-height: 0px;
   }
 
   &:hover {
     color: #fff;
     i {
       color: $orangeColor;
+    }
+    .green {
+      color: green !important;
     }
   }
 }
