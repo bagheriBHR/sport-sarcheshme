@@ -284,6 +284,32 @@ a {
   color: #bbbbbb;
 }
 
+.rotated-header th {
+  border-top: 0;
+  padding: 20px 0;
+  height: 180px;
+  vertical-align: top !important;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.rotated-header th span {
+  display: inline-block;
+  bottom: 0;
+  margin: 0 0 0 10px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
 .customtable thead {
   background-color: rgba(0, 0, 0, 0.04);
   color: rgba(0, 0, 0, 0.7) !important;
@@ -310,7 +336,7 @@ a {
   text-decoration: none;
   font-size: 0.7rem;
   border: 1px solid rgba(29, 18, 18, 0.2);
-  padding: 3px 10px;
+  padding: 0px 10px;
 }
 
 .date a:hover {
