@@ -472,6 +472,29 @@ a {
   color: green !important;
 }
 
+.personalCard {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #ec7741;
+}
+
+.personalCard .custom-field-title {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.personalCard .position-absolute {
+  top: -16px;
+  right: 15px;
+  background-color: #fff;
+  padding: 3px 10px;
+}
+
+.personalCard .position-absolute span {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
 .loginContainer {
   height: 100vh;
   background-color: rgba(56, 56, 56, 0.7);
@@ -716,7 +739,7 @@ a {
   }
 }
 
-/* checkbox */
+/* checkbox 2--------------------------------------------------------------*/
 .boxes {
   margin: auto;
   padding: 10px;

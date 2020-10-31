@@ -273,27 +273,6 @@ $buttonColor: #868686;
     }
   }
 }
-// .rotated-header th {
-//   height: 190px;
-//   vertical-align: bottom;
-//   text-align: left;
-//   line-height: 1;
-// }
-
-// .rotated-header-container {
-//   width: 20px;
-// }
-
-// .rotated-header-content {
-//   width: 300px;
-//   transform-origin: bottom left;
-//   transform: translateX(75px) rotate(-90deg);
-// }
-
-// .rotated-header td:not(:first-child) {
-//   text-align: right;
-// }
-
 .customtable {
   thead {
     background-color: $bgGray;
@@ -420,6 +399,26 @@ $buttonColor: #868686;
   }
 }
 
+.personalCard {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid $orangeColor;
+  .custom-field-title {
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+  .position-absolute {
+    top: -16px;
+    right: 15px;
+    background-color: #fff;
+    padding: 3px 10px;
+
+    span {
+      font-size: 0.8rem;
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: bold;
+    }
+  }
+}
+
 //login page----------------------------------------------
 
 .loginContainer {
@@ -505,6 +504,8 @@ $buttonColor: #868686;
     }
   }
 }
+
+// checkbox1-----------------------------------------------------------------------------------------
 
 .checkbox {
   --background: #fff;
@@ -631,7 +632,7 @@ $buttonColor: #868686;
   }
 }
 
-/* checkbox */
+/* checkbox 2--------------------------------------------------------------*/
 .boxes {
   margin: auto;
   padding: 10px;
