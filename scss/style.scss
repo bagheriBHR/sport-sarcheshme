@@ -339,6 +339,8 @@ $buttonColor: #868686;
 }
 .custom-field {
   @include input();
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 .custom-field:focus::placeholder {
   color: transparent;
@@ -358,6 +360,7 @@ $buttonColor: #868686;
     transition: all 0.3s;
     color: #575757;
     line-height: 0px;
+    font-size: 1rem !important;
   }
 
   &:hover {

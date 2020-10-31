@@ -381,6 +381,11 @@ a {
   color: #474747;
 }
 
+.custom-field {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .custom-field:focus, .custom-field:active, .custom-field:-webkit-autofill, .custom-field:-webkit-autofill:hover, .custom-field:-webkit-autofill:focus {
   -webkit-transition: background-color 5000s ease-in-out 0s !important;
   transition: background-color 5000s ease-in-out 0s !important;
@@ -426,6 +431,7 @@ a {
   transition: all 0.3s;
   color: #575757;
   line-height: 0px;
+  font-size: 1rem !important;
 }
 
 .custombutton:hover {
