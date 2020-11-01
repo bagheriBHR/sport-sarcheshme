@@ -445,6 +445,28 @@ $buttonColor: #868686;
   border-top: 0px !important;
 }
 
+.file_upload {
+  i {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  #selected_filename {
+    font-size: 0.7rem;
+    font-weight: bold !important;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .file_upload_button {
+    background-color: $orangeColor;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    outline: none !important;
+    border: none !important;
+    border-radius: 2px;
+  }
+}
+
 //login page----------------------------------------------
 
 .loginContainer {

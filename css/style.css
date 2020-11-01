@@ -519,6 +519,26 @@ a {
   border-top: 0px !important;
 }
 
+.file_upload i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.file_upload #selected_filename {
+  font-size: 0.7rem;
+  font-weight: bold !important;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.file_upload .file_upload_button {
+  background-color: #ec7741;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px 15px;
+  outline: none !important;
+  border: none !important;
+  border-radius: 2px;
+}
+
 .loginContainer {
   height: 100vh;
   background-color: rgba(56, 56, 56, 0.7);
