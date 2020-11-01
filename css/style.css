@@ -495,6 +495,30 @@ a {
   font-weight: bold;
 }
 
+.formTab a.active {
+  border-top: 2px solid #ec7741 !important;
+}
+
+.formTab a.active i {
+  color: #ec7741;
+}
+
+.formTab a {
+  border-top-width: 2px !important;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
+.formTab a:hover, .formTab a:focus {
+  border-top: 2px solid #ec7741 !important;
+}
+
+.tab-content {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 0px !important;
+}
+
 .loginContainer {
   height: 100vh;
   background-color: rgba(56, 56, 56, 0.7);
