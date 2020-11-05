@@ -666,32 +666,9 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.forget-password .desc .lock {
-  background: #908e8e;
-  margin-top: 6px;
-  border-radius: 3px;
-  width: 20px;
-  height: 17px;
-  position: relative;
-}
-
-.forget-password .desc .lock:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border: 3px solid #908e8e;
-  top: -12px;
-  left: 2.9px;
-  width: 14px;
-  height: 27px;
-  border-radius: 35px 35px 0 0;
-}
-
-.forget-password .desc .lock div {
-  width: 5px;
-  height: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+.forget-password .desc i {
+  color: gray;
+  font-size: 1rem;
 }
 
 .forget-password .desc p {
