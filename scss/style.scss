@@ -555,13 +555,36 @@ $buttonColor: #868686;
 
 .forget-password {
   h4 {
-    font-size: 1.2rem !important ;
+    font-size: 1.1rem !important ;
   }
   .desc {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    i {
-      color: rgba(0, 0, 0, 0.2);
-      font-size: 1.2rem;
+    .lock {
+      background: #908e8e;
+      margin-top: 6px;
+      border-radius: 3px;
+      width: 20px;
+      height: 17px;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 3px solid #908e8e;
+        top: -12px;
+        left: 2.9px;
+        width: 14px;
+        height: 27px;
+        border-radius: 35px 35px 0 0;
+      }
+
+      div {
+        width: 5px;
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+      }
     }
     p {
       color: rgba(0, 0, 0, 0.6);
@@ -572,32 +595,6 @@ $buttonColor: #868686;
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
     font-size: 0.8rem;
-  }
-  .lock {
-    background: #908e8e;
-    margin-top: 5px;
-    border-radius: 3px;
-    width: 21px;
-    height: 17px;
-    position: relative;
-    div {
-      width: 5px;
-      height: 5px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-    }
-  }
-
-  .lock:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border: 3px solid #908e8e;
-    top: -13px;
-    left: 3px;
-    width: 14px;
-    height: 27px;
-    border-radius: 35px 35px 0 0;
   }
 }
 
