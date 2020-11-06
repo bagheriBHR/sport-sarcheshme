@@ -1,4 +1,14 @@
-@import "font-face";
+// @import "font-face";
+
+@font-face {
+  font-family: "Vazir";
+  src: url("/fonts/Vazir.ttf"), url("/fonts/Vazir.woff"),
+    url("/fonts/Vazir.eot"), url("/fonts/Vazir.woff2");
+}
+*,
+a {
+  font-family: "Vazir";
+}
 
 $mainBackground: #fff;
 
@@ -292,7 +302,7 @@ $buttonColor: #868686;
   text-decoration: none;
   font-size: 0.7rem;
   border: 1px solid rgba(29, 18, 18, 0.2);
-  padding: 0px 10px;
+  padding: 2px 10px;
 
   &:hover {
     color: rgba(95, 43, 43, 0.8);

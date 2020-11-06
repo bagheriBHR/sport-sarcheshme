@@ -336,7 +336,7 @@ a {
   text-decoration: none;
   font-size: 0.7rem;
   border: 1px solid rgba(29, 18, 18, 0.2);
-  padding: 0px 10px;
+  padding: 2px 10px;
 }
 
 .date a:hover {
@@ -450,6 +450,36 @@ a {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   transition: all 0.3s;
+}
+
+.custombutton-danger {
+  background-color: #9b2e2e;
+  border-color: #9b2e2e;
+}
+
+.custombutton-danger:hover {
+  background-color: #912a2a;
+  border-color: #912a2a;
+}
+
+.custombutton-success {
+  background-color: #2e9b46;
+  border-color: #2e9b46;
+}
+
+.custombutton-success:hover {
+  background-color: #217e35;
+  border-color: #217e35;
+}
+
+.custombutton-primary {
+  background-color: #ec7741;
+  border-color: #ec7741;
+}
+
+.custombutton-primary:hover {
+  background-color: #e65f21;
+  border-color: #e65f21;
 }
 
 .custombutton i {
