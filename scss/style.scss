@@ -1,12 +1,4 @@
-@font-face {
-  font-family: "Vazir";
-  src: url("/fonts/Vazir.ttf"), url("/fonts/Vazir.woff"),
-    url("/fonts/Vazir.eot"), url("/fonts/Vazir.woff2");
-}
-*,
-a {
-  font-family: "Vazir";
-}
+@import "font-face";
 
 $mainBackground: #fff;
 
@@ -381,6 +373,30 @@ $buttonColor: #868686;
   outline: none !important;
   box-shadow: none !important;
   transition: all 0.3s;
+  &-danger {
+    background-color: #9b2e2e;
+    border-color: #9b2e2e;
+    &:hover {
+      background-color: #912a2a;
+      border-color: #912a2a;
+    }
+  }
+  &-success {
+    background-color: #2e9b46;
+    border-color: #2e9b46;
+    &:hover {
+      background-color: #217e35;
+      border-color: #217e35;
+    }
+  }
+  &-primary {
+    background-color: $orangeColor;
+    border-color: $orangeColor;
+    &:hover {
+      background-color: $darkOrangeColor;
+      border-color: $darkOrangeColor;
+    }
+  }
 
   i {
     transition: all 0.3s;
