@@ -125,6 +125,43 @@ a {
   text-decoration: none;
 }
 
+.header .navbar {
+  border-top: 1px solid #ec7741;
+  background-color: rgba(56, 56, 56, 0.5);
+}
+
+.header .navbar .nav-item {
+  padding: 0px 10px;
+}
+
+.header .navbar .nav-item .nav-link {
+  padding: 15px 20px;
+  font-size: 0.85rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: none !important;
+}
+
+.header .navbar .nav-item .nav-link:hover {
+  color: #ec7741;
+}
+
+.header .navbar .nav-item .nav-link::after {
+  width: 1px;
+  height: 15px;
+  content: "";
+  background-color: #424141;
+  position: absolute;
+  top: 18px;
+  left: -10px;
+}
+
+.header .navbar .nav-item:last-child .nav-link::after {
+  background-color: transparent !important;
+}
+
 .sidebar .btntitle {
   color: #fff !important;
   font-size: 0.8rem;
@@ -149,6 +186,8 @@ a {
 .sidebar table tr a {
   font-size: 0.8rem;
   color: #447e9b !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .sidebar table tr a:hover {
@@ -184,6 +223,8 @@ a {
 .activity a {
   color: #447e9b;
   font-size: 0.8rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .activity a:hover {
@@ -245,6 +286,8 @@ a {
 .statistics a {
   color: #447e9b;
   font-size: 0.8rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .statistics a:hover {
@@ -337,6 +380,8 @@ a {
   font-size: 0.7rem;
   border: 1px solid rgba(29, 18, 18, 0.2);
   padding: 2px 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .date a:hover {
@@ -370,6 +415,8 @@ a {
 .filter ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding: 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .filter ul li:last-child {
@@ -392,6 +439,8 @@ a {
   font-size: 0.8rem;
   background-color: #ec7741;
   border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .form-title:hover {
