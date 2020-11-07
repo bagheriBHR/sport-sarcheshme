@@ -120,17 +120,17 @@ $buttonColor: #868686;
     border-top: 1px solid $orangeColor;
     background-color: $navbarBackGroundColor;
     .nav-item {
-      padding: 0px 10px;
+      // padding: 0px 10px;
 
       .nav-link {
-        padding: 15px 20px;
+        padding: 15px 30px;
         font-size: 0.85rem;
         transition: all 0.3s;
         position: relative;
         color: rgba(255, 255, 255, 0.9);
         border-bottom: none !important;
         &:hover {
-          color: $orangeColor;
+          background-color: $orangeColor;
         }
         &::after {
           width: 1px;
@@ -139,7 +139,7 @@ $buttonColor: #868686;
           background-color: #424141;
           position: absolute;
           top: 18px;
-          left: -10px;
+          left: -1px;
         }
       }
       &:last-child .nav-link::after {

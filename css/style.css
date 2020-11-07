@@ -130,12 +130,8 @@ a {
   background-color: rgba(56, 56, 56, 0.5);
 }
 
-.header .navbar .nav-item {
-  padding: 0px 10px;
-}
-
 .header .navbar .nav-item .nav-link {
-  padding: 15px 20px;
+  padding: 15px 30px;
   font-size: 0.85rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -145,7 +141,7 @@ a {
 }
 
 .header .navbar .nav-item .nav-link:hover {
-  color: #ec7741;
+  background-color: #ec7741;
 }
 
 .header .navbar .nav-item .nav-link::after {
@@ -155,7 +151,7 @@ a {
   background-color: #424141;
   position: absolute;
   top: 18px;
-  left: -10px;
+  left: -1px;
 }
 
 .header .navbar .nav-item:last-child .nav-link::after {
