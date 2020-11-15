@@ -24,7 +24,7 @@ $buttonColor: #868686;
 // left sidebar colors
 
 $sidebarBgColor: #2c2c2c;
-$sidebarHoverBgColor: #202020;
+$sidebarHoverBgColor: #272727;
 $sidebarSubMenuBgColor: #3d3d3d;
 $sidebarTextColor: #d6d6d6;
 
@@ -660,13 +660,13 @@ $sidebarTextColor: #d6d6d6;
   }
 
   .right-sidebar {
-    border-top: 2px solid $orangeColor;
+    border-top: 2px solid $darkOrangeColor;
     width: 20%;
     background-color: $sidebarBgColor;
     box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
     .btntitle[aria-expanded="true"] {
       background-color: $sidebarHoverBgColor !important;
-      border-right: 2px solid $orangeColor;
+      border-right: 2px solid $darkOrangeColor;
       span {
         color: #fff !important;
       }
@@ -679,7 +679,7 @@ $sidebarTextColor: #d6d6d6;
       padding: 15px 20px;
       &:hover,
       &:focus {
-        border-right: 2px solid $orangeColor;
+        border-right: 2px solid $darkOrangeColor;
         background-color: $sidebarHoverBgColor;
         color: #fff !important;
         text-decoration: none;
@@ -687,8 +687,8 @@ $sidebarTextColor: #d6d6d6;
     }
     .sidebarTitle {
       font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.3);
-      background-color: rgba(0, 0, 0, 0.4);
+      color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(0, 0, 0, 0.3);
       padding: 15px 20px;
     }
     .btntitle {
@@ -701,7 +701,7 @@ $sidebarTextColor: #d6d6d6;
       transition: all 0.3s;
       &:hover {
         background-color: $sidebarHoverBgColor;
-        border-right: 2px solid $orangeColor;
+        border-right: 2px solid $darkOrangeColor;
         color: #fff !important;
         cursor: pointer;
       }
