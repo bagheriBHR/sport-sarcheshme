@@ -19,8 +19,14 @@ $orangeColor: #ec7741;
 $darkOrangeColor: #e65f21;
 $headerBoxShadowColor: rgba(0, 0, 0, 0.2);
 $navbarBackGroundColor: rgba(56, 56, 56, 0.5);
-
 $buttonColor: #868686;
+
+// left sidebar colors
+
+$sidebarBgColor: #313131;
+$sidebarHoverBgColor: #252525;
+$sidebarSubMenuBgColor: #414141;
+$sidebarTextColor: #d6d6d6;
 
 @mixin input {
   &:focus,
@@ -637,6 +643,90 @@ $buttonColor: #868686;
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
     font-size: 0.8rem;
+  }
+}
+
+//sidebar
+.has-sidebar {
+  margin: 0px 0px 0px 20px;
+  display: flex;
+
+  [data-toggle="collapse"][aria-expanded="true"] > .js-rotate-if-collapsed {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .left-sidebar {
+    border-top: 2px solid $orangeColor;
+    width: 20%;
+    background-color: $sidebarBgColor;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    .btntitle[aria-expanded="true"] {
+      background-color: $sidebarHoverBgColor !important;
+      border-right: 2px solid $orangeColor;
+      span {
+        color: #fff !important;
+      }
+    }
+    .sidebarItem {
+      color: $sidebarTextColor !important;
+      font-size: 0.8rem;
+      background-color: $sidebarBgColor;
+      border-right: 2px solid transparent;
+      padding: 15px 20px;
+      &:hover,
+      &:focus {
+        border-right: 2px solid $orangeColor;
+        background-color: $sidebarHoverBgColor;
+        color: #fff !important;
+        text-decoration: none;
+      }
+    }
+    .sidebarTitle {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 15px 20px;
+    }
+    .btntitle {
+      color: $sidebarTextColor !important;
+      border-right: 2px solid transparent;
+      font-size: 0.8rem;
+      background-color: $sidebarBgColor;
+      border-radius: 0;
+      padding: 15px 20px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $sidebarHoverBgColor;
+        border-right: 2px solid $orangeColor;
+        color: #fff !important;
+        cursor: pointer;
+      }
+    }
+    table {
+      background-color: $sidebarSubMenuBgColor;
+      tr {
+        &:hover a {
+          color: #fff !important;
+          text-decoration: none;
+        }
+        a {
+          padding: 0.2rem 1rem 0.2rem 0rem;
+          font-size: 0.8rem;
+          color: $sidebarTextColor !important;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+
+  .right-sidebar {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 80%;
   }
 }
 

@@ -757,6 +757,98 @@ a {
   font-size: 0.8rem;
 }
 
+.has-sidebar {
+  margin: 0px 0px 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.has-sidebar [data-toggle="collapse"][aria-expanded="true"] > .js-rotate-if-collapsed {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.has-sidebar .left-sidebar {
+  border-top: 2px solid #ec7741;
+  width: 20%;
+  background-color: #313131;
+  -webkit-box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.has-sidebar .left-sidebar .btntitle[aria-expanded="true"] {
+  background-color: #252525 !important;
+  border-right: 2px solid #ec7741;
+}
+
+.has-sidebar .left-sidebar .btntitle[aria-expanded="true"] span {
+  color: #fff !important;
+}
+
+.has-sidebar .left-sidebar .sidebarItem {
+  color: #d6d6d6 !important;
+  font-size: 0.8rem;
+  background-color: #313131;
+  border-right: 2px solid transparent;
+  padding: 15px 20px;
+}
+
+.has-sidebar .left-sidebar .sidebarItem:hover, .has-sidebar .left-sidebar .sidebarItem:focus {
+  border-right: 2px solid #ec7741;
+  background-color: #252525;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.has-sidebar .left-sidebar .sidebarTitle {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+}
+
+.has-sidebar .left-sidebar .btntitle {
+  color: #d6d6d6 !important;
+  border-right: 2px solid transparent;
+  font-size: 0.8rem;
+  background-color: #313131;
+  border-radius: 0;
+  padding: 15px 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.has-sidebar .left-sidebar .btntitle:hover {
+  background-color: #252525;
+  border-right: 2px solid #ec7741;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.has-sidebar .left-sidebar table {
+  background-color: #414141;
+}
+
+.has-sidebar .left-sidebar table tr:hover a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.has-sidebar .left-sidebar table tr a {
+  padding: 0.2rem 1rem 0.2rem 0rem;
+  font-size: 0.8rem;
+  color: #d6d6d6 !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.has-sidebar .right-sidebar {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 80%;
+}
+
 .checkbox {
   --background: #fff;
   --border: #fff;
