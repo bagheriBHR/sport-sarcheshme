@@ -767,6 +767,13 @@ a {
 .has-sidebar [data-toggle="collapse"][aria-expanded="true"] > .js-rotate-if-collapsed {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.has-sidebar .js-rotate-if-collapsed {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .has-sidebar .right-sidebar {

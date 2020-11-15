@@ -657,6 +657,10 @@ $sidebarTextColor: #d6d6d6;
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
+    transition: all 0.3s;
+  }
+  .js-rotate-if-collapsed {
+    transition: all 0.3s;
   }
 
   .right-sidebar {
