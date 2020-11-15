@@ -23,9 +23,9 @@ $buttonColor: #868686;
 
 // left sidebar colors
 
-$sidebarBgColor: #313131;
-$sidebarHoverBgColor: #252525;
-$sidebarSubMenuBgColor: #414141;
+$sidebarBgColor: #2c2c2c;
+$sidebarHoverBgColor: #202020;
+$sidebarSubMenuBgColor: #3d3d3d;
 $sidebarTextColor: #d6d6d6;
 
 @mixin input {
@@ -659,7 +659,7 @@ $sidebarTextColor: #d6d6d6;
     transform: rotate(90deg);
   }
 
-  .left-sidebar {
+  .right-sidebar {
     border-top: 2px solid $orangeColor;
     width: 20%;
     background-color: $sidebarBgColor;
@@ -716,14 +716,14 @@ $sidebarTextColor: #d6d6d6;
         a {
           padding: 0.2rem 1rem 0.2rem 0rem;
           font-size: 0.8rem;
-          color: $sidebarTextColor !important;
+          color: #c2c2c2 !important;
           transition: all 0.3s;
         }
       }
     }
   }
 
-  .right-sidebar {
+  .left-sidebar {
     margin-top: 20px;
     margin-right: 20px;
     width: 80%;
